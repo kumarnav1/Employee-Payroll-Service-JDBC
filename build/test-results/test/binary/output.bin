@@ -1,3 +1,8 @@
 BEmployeePayrollData{id=101, name='Jeff Bezos', salary=1000000.0}
 BEmployeePayrollData{id=101, name='Bill Gates', salary=2000000.0}
-GEmployeePayrollData{id=101, name='Mark Zuckerberg', salary=3000000.0}
+GEmployeePayrollData{id=101, name='Mark Zuckerberg', salary=3000001.0}
+[Connecting to database: jdbc:mysql://localhost:3306/employee_payroll_service?useSSL=false
+IConnection is successful!!!!!!com.mysql.cj.jdbc.ConnectionImpl@2ca3e5b1
+BEmployeePayrollData{id=101, name='Jeff Bezos', salary=1000000.0}
+BEmployeePayrollData{id=101, name='Bill Gates', salary=2000000.0}
+GEmployeePayrollData{id=101, name='Mark Zuckerberg', salary=3000000.0}

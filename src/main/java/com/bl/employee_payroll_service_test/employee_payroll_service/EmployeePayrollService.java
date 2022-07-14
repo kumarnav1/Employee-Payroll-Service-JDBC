@@ -38,8 +38,12 @@ public class EmployeePayrollService {
         employeePayrollList.add(new EmployeePayrollData(id, name, salary));
     }
 
-    public List<EmployeePayrollData> readEmployeePayrollData(IOService ioService) {
-        return null;
+    public List<EmployeePayrollData> readEmployeePayrollData(IOService ioService){
+        if (ioService.equals(IOService.FILE_IO))
+           this.employeePayrollList = new EmployeePayrollFileIOService().readData();
+       if (ioService.equals(IOService.DB_IO))
+            this.employeePayrollList = new employeePayrollDBService().readData();
+        return employeePayrollList;
     }
 
     public void writeEmployeePayrollData(IOService ioService) {
@@ -62,12 +66,4 @@ public class EmployeePayrollService {
     }
 
     public enum IOService {CONSOLE_IO, FILE_IO, DB_IO}
-
-/*    public long readEmployeePayrollData(IOService ioService){
-        if (ioService.equals(IOService.FILE_IO))
-            this.employeePayrollList = new EmployeePayrollFileIOService().readData();
-        return employeePayrollList.size();
-    }*/
-
-
 }

@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.employee_payroll_service_test.EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-14T00:05:12" hostname="LAPTOP-3PCP8SDM" time="0.074">
+<testsuite name="com.bl.employee_payroll_service_test.EmployeePayrollServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-07-14T02:37:19" hostname="LAPTOP-3PCP8SDM" time="0.621">
   <properties/>
-  <testcase name="given3Employees_WhenWrittenToFile_ShouldMatchEmployeeEntries()" classname="com.bl.employee_payroll_service_test.EmployeePayrollServiceTest" time="0.074"/>
+  <testcase name="givenFileOnReadingFromFileShouldMatchEmployeeCount()" classname="com.bl.employee_payroll_service_test.EmployeePayrollServiceTest" time="0.053"/>
+  <testcase name="givenEmployeePayrollInDB_WhenRetrieved_ShouldMatchEmployeeCount()" classname="com.bl.employee_payroll_service_test.EmployeePayrollServiceTest" time="0.497"/>
+  <testcase name="given3Employees_WhenWrittenToFile_ShouldMatchEmployeeEntries()" classname="com.bl.employee_payroll_service_test.EmployeePayrollServiceTest" time="0.065"/>
   <system-out><![CDATA[EmployeePayrollData{id=101, name='Jeff Bezos', salary=1000000.0}
+EmployeePayrollData{id=101, name='Bill Gates', salary=2000000.0}
+EmployeePayrollData{id=101, name='Mark Zuckerberg', salary=3000001.0}
+Connecting to database: jdbc:mysql://localhost:3306/employee_payroll_service?useSSL=false
+Connection is successful!!!!!!com.mysql.cj.jdbc.ConnectionImpl@2ca3e5b1
+EmployeePayrollData{id=101, name='Jeff Bezos', salary=1000000.0}
 EmployeePayrollData{id=101, name='Bill Gates', salary=2000000.0}
 EmployeePayrollData{id=101, name='Mark Zuckerberg', salary=3000000.0}
 ]]></system-out>
